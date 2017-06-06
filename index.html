@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta Data -->
+		<meta charset="utf-8">
+		<meta name="author" content="Robert Glatzel">
+		<meta name="description" content="...">
+
+			<!-- For media Query -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- Latest compiled and minified CSS for bootstrap-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+			<!-- Optional Bootstrap theme -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+			<!-- Title Here  -->
+		<title>User Profile</title>
+
+			<!-- Main CSS Here -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row" id="contentWrapper">
+				<div class="col-lg-12" id="questions">
+					<h1>Create User Profile!</h1>
+					<form>
+					<!-- Name -->
+						<div id="nameDiv" class="form-group">
+							<p>Name:</p>
+							<input type="text" name="FirstName" placeholder="First Name" id="firstName">
+							<input type="text" name="LastName" placeholder="Last Name" id="lastName">
+						</div>
+
+					<!-- Gender  -->
+						<div id="genderDiv" class="form-group">
+							  <p>Gender:</p>
+							  <div class="gender">
+							  	<label for="male">Male</label>
+							  	<input type="radio" name="gender" id="male" value="male">
+							  </div>
+							  <div class="gender">
+							  	<label for="female">Female</label>
+							  	<input type="radio" name="gender" id="female" value="female">
+							  </div>
+							  <div class="gender">
+							  	<label for="other">Other</label>
+							  	<input type="radio" name="gender" id="other" value="other">
+							  </div>
+						</div>
+
+						<!-- Phone number -->
+
+						<div id="phoneDiv" class="form-group">
+							<p>Phone Number:</p><input type="text" id="phoneNumber" name="PhoneNumber" placeholder="123-123-1234">
+						</div>
+
+						<!-- Email  -->
+						<div id="emailDiv" class="form-group">
+							<p>Email Address:</p><input type="text" id="emailInput" name="email" placeholder="youremail@email.com">
+						</div>
+						<!-- Favorite color picker -->
+						<div id="favoriteColor" class="form-group">
+							<p>Favorite Color:</p>
+							<select>
+							  <option value="red" class="userColor">Red</option>
+							  <option value="blue" class="userColor" >Blue</option>
+							  <option value="green" class="userColor">Green</option>
+							  <option value="yellow" class="userColor">Yellow</option>
+							  <option value="black" class="userColor">Black</option>
+							  <option value="pink" class="userColor">Pink</option>
+							  <option value="purple" class="userColor">Purple</option>
+							  <option value="orange" class="userColor">Orange</option>
+							</select>
+						</div>
+
+						<!-- Continent of Birth -->
+
+						<div id="continentSelector" class="form-group">
+							<p>Continent of Birth:</p>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="Africa"> Africa
+							</label>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="Asia"> Asia
+							</label>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="Australia"> Australia
+							</label>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="Europe"> Europe
+							</label>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="North America"> North America
+							</label>
+							<label>
+								<input type="checkbox" name="continent" class="userBirth" value="South America"> South America
+							</label>
+
+						</div>
+
+						<button id="submitButton" type="button" class="btn btn-default">Submit</button>
+
+					</form>
+				</div>
+				<div class="col-lg-12" id="results">
+					<h1>User Profile</h1>
+					<h3 id="newUserName"></h3>
+					<h3 id="newUserGender"></h3>
+					<h3 id="newUserPhone"></h3>
+					<h3 id="newUserEmail"></h3>
+					<h3 id="newUserColor"></h3>
+					<h3 id="newUserBirth"></h3>
+			</div>
+		</div>
+	
+
+		<!-- jQuery script comes BEFORE BOOTSTRAP -->
+
+		<!-- jQuery Script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+   	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+   	<!-- Custom JavaScript -->
+   	<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+
+</html>

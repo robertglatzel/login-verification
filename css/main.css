@@ -1,0 +1,31 @@
+#contentWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#questions {
+	border: 1px solid black;
+}
+
+p {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+form {
+	margin: 20px 35px;
+	text-align: left;
+}
+
+.gender{
+	display: inline-block;
+}
+
+label {
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+#results {
+	visibility: hidden;
+}
